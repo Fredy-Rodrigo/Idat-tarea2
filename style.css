@@ -10,8 +10,6 @@ body {
     "footer footer footer";
 }
 
-/*HEADER*/
-
 header {
     grid-area: header;
     display: grid;
@@ -66,8 +64,6 @@ header {
     margin: auto;
 }
 
-/*NAV*/
-
 nav {
     grid-area: nav;
     background-color: lightblue;
@@ -94,8 +90,6 @@ nav button {
     display: block;
     margin: auto;
 }
-
-/*MAIN*/
 
 main {
     grid-area: main;
@@ -144,8 +138,6 @@ fieldset div {
     margin: 5px 25px;
     padding: 3px;
 }
-
-/*FOOTER*/
 
 footer {
     grid-area: footer;
