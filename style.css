@@ -1,0 +1,161 @@
+body {
+    display: grid;
+    grid-template-rows: auto;
+    grid-auto-columns: 3fr;
+    gap: 10px;
+    grid-template-areas: 
+    "header header header"
+    "header header header"
+    "nav    main   main  "
+    "footer footer footer";
+}
+
+/*HEADER*/
+
+header {
+    grid-area: header;
+    display: grid;
+    gap: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.titulo h1 {
+    margin: 10px auto;
+}
+
+.titulo img {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0px 10px;
+    clip-path: circle(45%);
+    filter: opacity(60%);
+}
+
+.titulo p {
+    margin: 10px;
+}
+
+.buscador {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.buscador label, .buscador input, .buscador button {
+    margin: 5px;
+}
+
+.buscador button {
+    padding-top: 3px;
+}
+
+#buscar img {
+    width: 20px;
+    display: block;
+    margin: auto;
+}
+
+/*NAV*/
+
+nav {
+    grid-area: nav;
+    background-color: lightblue;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 15px;
+    gap: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav h2 {
+    margin: 15px 0px;
+}
+
+nav button {
+    width: 200px;
+    height: 90px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#agregar img, #administrar img, #existencias img, #pagos img {
+    width: 60px;
+    display: block;
+    margin: auto;
+}
+
+/*MAIN*/
+
+main {
+    grid-area: main;
+    background-color: lightblue;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+fieldset div {
+    margin: 10px;
+}
+
+.radios {
+    display: inline-block;
+    margin: 0px;
+}
+
+#codigo, #nombre, #abreviatura, #categoria, #ruc, #precio, #etiqueta, #fecha, .radios, #impuesto, #foto, #descripcion {
+    position: absolute;
+    left: 300px;
+}
+
+#validar {
+    position: absolute;
+    left: 500px;
+}
+
+.descripcion {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.descripcion textarea {
+    resize: none;
+}
+
+.gl {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.gl button {
+    margin: 5px 25px;
+    padding: 3px;
+}
+
+/*FOOTER*/
+
+footer {
+    grid-area: footer;
+    background-color: cornflowerblue;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+}
